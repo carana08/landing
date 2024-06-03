@@ -42,9 +42,14 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  background-color: #3b5d50 !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+}
   .custom-navbar .navbar-brand {
     font-size: 32px;
     font-weight: 600; }
@@ -108,7 +113,10 @@ a {
 
 .hero {
   background: #3b5d50;
-  background-image: url("/images/fondoPag.jpeg");
+  background-image: url("/images/fondoPag.jpeg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
