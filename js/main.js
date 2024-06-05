@@ -26,7 +26,35 @@ let loaded = ( eventLoaded ) => {
         
         element1.focus()
   
-        alert('Ingrese un texto válido')
+        alert('Ingrese su nombre por favor')
+  
+        return;
+      }
+  
+      debugger;
+  
+    })
+  
+  }
+  let loaded2 = ( eventLoaded ) => {
+
+    let myform = document.getElementById('formulario');
+   
+    myform.addEventListener('submit', ( event) => {
+        event.preventDefault();
+    const element2 = document.getElementById('element2');
+ 
+ 
+  
+      let element2Value = element2.value;
+      
+      // Validación del contenido del input 
+  
+      if( element2Value.length == 0 ) {
+        
+        element2.focus()
+  
+        alert('Ingrese su email por favor')
   
         return;
       }
@@ -37,4 +65,5 @@ let loaded = ( eventLoaded ) => {
   
   }
 window.addEventListener('DOMContentLoaded', loaded);
+window.addEventListener('DOMContentLoaded', loaded2);
 

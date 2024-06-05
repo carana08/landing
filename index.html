@@ -28,7 +28,7 @@
 <body id="pageTop">
 
 	<!-- Start Header/Navigation -->
-	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Apartment">
 
 		<div class="container">
 			<a class="navbar-brand" href="index.html">NotiFut<span>.</span></a>
@@ -56,24 +56,21 @@
 	<!-- End Header/Navigation -->
 
 	<!-- Start Hero Section -->
-	<div class="hero" id="inicio">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-5">
-					<div class="intro-excerpt">
-						<h1><span class="d-block">Lo más importante del Deporte a tu alcance</span></h1>
-						<h2 class="mb-4">Accede a las noticias más recientes del mundo del fútbol</h2>
-						<p><a href="#suscription" class="btn btn-secondary me-2">SUSCRIBETE!</a></p>
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="hero-img-wrap">
-						<!--<img src="images/couch.png" class="img-fluid">-->
+	<header class="master">
+		<div class="hero" id="inicio">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-5">
+						<div class="intro-excerpt">
+							<h1><span class="d-block">Lo más importante del Deporte a tu alcance</span></h1>
+							<h2 class="mb-4">Accede a las noticias más recientes del mundo del fútbol</h2>
+							<p><a href="#suscription" class="btn btn-secondary me-2">SUSCRIBETE!</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 	<!-- End Hero Section -->
 
 	<!-- Start Product Section -->
@@ -456,7 +453,7 @@
 		</div>
 	</div>
 	<!-- End Blog Section -->
-
+	
 	<!-- Start Footer Section -->
 	<footer class="footer-section" id="suscription">
 		<div class="container relative">
@@ -472,12 +469,14 @@
 									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
 
 						<form action="#" id="formulario" class="row g-3">
-							<input id="element1" type="text">
 							<div class="col-auto">
-								<input type="text" class="form-control" placeholder="Enter your name">
+								<input id="element1" type="text" class="form-control is-invalid"
+									placeholder="Tu nombre *" data-sb-validations="required" data-sb-can-submit="no">
+								<div class="error" data-sb-feedback="name:required">Un nombre es requerido .
+								</div>
 							</div>
 							<div class="col-auto">
-								<input type="email" class="form-control" placeholder="Enter your email">
+								<input id="element2" type="email" class="form-control" placeholder="Tu email *">
 							</div>
 							<div class="col-auto">
 								<button class="btn btn-primary" type="submit">
