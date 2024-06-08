@@ -5,7 +5,6 @@
     debugger;
   
 }*/
-
 let completarFormulario = () => {
   let myform = document.getElementById('formulario');
   myform.addEventListener('submit', (event) => {
@@ -110,4 +109,10 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+
+
+
+  
+  // Path: js/main.js
 
