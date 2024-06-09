@@ -110,9 +110,3 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 
-
-
-
-  
-  // Path: js/main.js
-
