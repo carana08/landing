@@ -156,6 +156,13 @@ a.more {
 .custom-navbar .custom-navbar-cta li:first-child {
   margin-right: 20px;
 }
+#ligas{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/images/fondo.jpg");
+}
+
+#ligas h2, #ligas h3, #ligas p{
+  color: white;
+}
 
 .intro-excerpt{
     font-size: 1.5rem;
@@ -313,12 +320,12 @@ header.master{
 
 .btn.btn-primary {
   background: black ;
-  border-color: #3b5d50;
+  border-color: white;
 }
 
 .btn.btn-primary:hover {
-  background: rgba(30, 18, 18, 0.623);
-  border-color: rgba(30, 18, 18, 0.623);;
+  background: rgba(0, 123, 114, 0.632);
+  border-color: rgba(0, 123, 114, 0.632);
 }
 
 .btn.btn-secondary {
@@ -338,7 +345,21 @@ header.master{
   border-width: 2px;
   border-color: rgba(255, 255, 255, 0.3);
 }
+.imf-fluid{
+  height: 303px;
+}
+.post-thumbnail{
+  height: 500px;
+  width: 630px;
+}
+.post-thumbnail{
+  pointer-events: none;
+}
+.myVideo{
+  width: 380px;
+  height: 250px;
 
+}
 .btn.btn-white-outline:hover {
   border-color: white;
   color: #ffffff;
@@ -383,16 +404,6 @@ header.master{
   font-size: 16px;
 }
 
-.product-section .product-item strong {
-  font-weight: 800 !important;
-  font-size: 18px !important;
-}
-
-.product-section .product-item h3,
-.product-section .product-item strong {
-  color: #2f2f2f;
-  text-decoration: none;
-}
 
 .product-section .product-item .icon-cross {
   position: absolute;
@@ -514,14 +525,6 @@ header.master{
 .we-help-section {
   padding: 7rem 0;
 }
-
-/*.we-help-section .imgs-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[27];
-  grid-template-columns: repeat(27, 1fr);
-  position: relative;
-}*/
 
 .we-help-section .imgs-grid:before {
   position: absolute;
@@ -900,7 +903,6 @@ input:invalid + .error {
   display: block;
 }
 
-/*55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555*/
 .footer-section .subscription-form .form-control::-webkit-input-placeholder {
   font-size: 14px;
 }
@@ -950,7 +952,7 @@ input:invalid + .error {
   font-size: 32px;
   font-weight: 500;
   text-decoration: none;
-  color: #3b5d50;
+  color: black;
 }
 
 .footer-section .custom-social li {
@@ -965,12 +967,12 @@ input:invalid + .error {
   line-height: 40px;
   display: inline-block;
   background: #dce5e4;
-  color: #3b5d50;
+  color: black;
   border-radius: 50%;
 }
 
 .footer-section .custom-social li a:hover {
-  background: #3b5d50;
+  background: black;
   color: #ffffff;
 }
 
@@ -1315,4 +1317,20 @@ textarea {
 #noticias .not-item .not-caption .not-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+@media (max-width: 500px) {
+  .imf-fluid{
+    height: 200px;
+  }
+  .post-thumbnail{
+    height: 250px;
+    width: 450px;
+  }
+  .myVideo{
+    width: 450px;
+    height: 250px;
+  
+  }
 }
