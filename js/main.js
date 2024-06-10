@@ -12,17 +12,19 @@ let completarFormulario = () => {
 
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('correo').value;
+	const cat = document.getElementById('categoria').value;
 
-    if (!nombre || !email) {
+    if (!nombre || !email || !cat) {
       // Si los campos están vacíos, mostrar una alerta y no enviar los datos
       alert('Por favor, completa todos los campos.');
       return;
     }
 
     const datos = {
-      nombre: nombre,
+      nombre: nombre,//nombre.value
       email: email,
-    };
+	  competición: cat,//cat.options[cat.selectIndex].value    
+	  };
 
     fetch('https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json', {
       method: 'POST',
@@ -35,6 +37,7 @@ let completarFormulario = () => {
       .then(datos => {
         console.log(datos);
         alert('Datos Enviados'); // Imprimir la respuesta del servidor
+		obtenerDatos();
       })
       .catch(error => console.error(error));
   });
@@ -63,6 +66,9 @@ const validarFormulario = (e) => {
 		break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
+		break;
+		case "categoria":
+			validarCampo(expresiones.correo, e.target, 'categoria');
 		break;
 	}
 }
@@ -109,4 +115,67 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+async function obtenerDatos() {
+	const url = "https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json"; // Reemplaza con la URL real
+	const respuesta = await fetch(url);
+	if (!respuesta.ok) {
+	console.error("Error:", respuesta.status);
+	return;
+	}
+	const datos = await respuesta.json();
+	loadVotes();
+  
+	console.log(datos);
+	 // Procesar o mostrar los datos obtenidos
+	}	
+obtenerDatos();
+let loadVotes = async() => {
+	const url = "https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json"; // Reemplaza con la URL real
+	const respuesta = await fetch(url);
+	if (!respuesta.ok) {
+	console.error("Error:", respuesta.status);
+	return;
+	}
+	const datos = await respuesta.json();
+	
+	// const tabla = document.getElementById('tabla');
+
+	let votesMap = new Map();
+
+	// tabla.innerHTML = '';
+	
+	// for (let key in datos) {
+	// 	const categoria = datos[key].categoria;
+	// 	tabla.innerHTML += template;
+	// }
+
+	for(const key in datos){
+		let vote= datos[key];
+		let categoria = vote['competición'];
+		let conteo = votesMap.get(categoria)? votesMap.get(categoria) + 1 : 1;
+		votesMap.set(categoria, conteo);
+	}
+	total = 0;
+	tableBody.innerHTML = '';
+
+	for (let [key, value] of votesMap) {
+		total += value;
+		tableBody.innerHTML += `
+		<tr>
+			<td>${key}</td>
+			<td>${value}</td>
+		</tr>
+		`;
+	}
+	tableBody.innerHTML += `
+	<tr>
+		<td><strong>Total de Suscriptores</strong></td>
+		<td><Strong>${total}<Strong></td>
+	</tr>
+	`;
+
+}
+
+
 

@@ -156,22 +156,26 @@ a.more {
 .custom-navbar .custom-navbar-cta li:first-child {
   margin-right: 20px;
 }
-#ligas{
+
+#ligas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/fondo.jpg");
 }
 
-#ligas h2, #ligas h3, #ligas p{
+#ligas h2,
+#ligas h3,
+#ligas p {
   color: white;
 }
 
-.intro-excerpt{
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.intro-excerpt {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.master{
+
+header.master {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/fondoPag.jpeg");
 
   text-align: center;
@@ -183,7 +187,7 @@ header.master{
 }
 
 
-.container{
+.container {
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -282,12 +286,14 @@ header.master{
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
+
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
+
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
@@ -319,7 +325,7 @@ header.master{
 }
 
 .btn.btn-primary {
-  background: black ;
+  background: black;
   border-color: white;
 }
 
@@ -345,21 +351,26 @@ header.master{
   border-width: 2px;
   border-color: rgba(255, 255, 255, 0.3);
 }
-.imf-fluid{
+
+.imf-fluid {
   height: 303px;
 }
-.post-thumbnail{
+
+.post-thumbnail {
   height: 500px;
   width: 630px;
 }
-.post-thumbnail{
+
+.post-thumbnail {
   pointer-events: none;
 }
-.myVideo{
+
+.myVideo {
   width: 380px;
   height: 250px;
 
 }
+
 .btn.btn-white-outline:hover {
   border-color: white;
   color: #ffffff;
@@ -373,10 +384,12 @@ header.master{
   padding: 7rem 0;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.product-section h2{
+
+.product-section h2 {
   font-size: 35px;
 }
-.product-section p{
+
+.product-section p {
   font-size: 20px;
   font-family: "Inter", sans-serif;
 }
@@ -887,19 +900,20 @@ header.master{
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.error{
-  color:red;
+.error {
+  color: red;
   font-size: 12px;
   width: 100%;
-  display:none;
+  display: none;
 
-}  
+}
 
-input:focus, textarea:invalid + .error {
+input:focus,
+textarea:invalid+.error {
   display: block;
 }
 
-input:invalid + .error {
+input:invalid+.error {
   display: block;
 }
 
@@ -1113,143 +1127,144 @@ textarea {
 }
 
 .formulario {
-	display: flex;
-	grid-template-columns: 2fr 2fr;
-	gap: 20px;
+  display: flex;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
   color: white;
 }
 
 .formulario__label {
-	display: block;
-	font-weight: 700;
-	padding: 10px;
-	cursor: pointer;
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .formulario__grupo-input {
-	position: relative;
+  position: relative;
 }
 
 .formulario__input {
-	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
-	border-radius: 3px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
+  width: 100%;
+  background: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+  border: 3px solid #0075FF;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 .formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
 }
 
 .formulario__input-error-activo {
-	display: block;
+  display: block;
 }
 
 .formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
 }
 
 .formulario__checkbox {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
-.formulario__grupo-terminos, 
+.formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-	grid-column: span 2;
+  grid-column: span 2;
 }
 
 .formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
 }
 
 .formulario__mensaje-activo {
-	display: block;
+  display: block;
 }
 
 .formulario__mensaje p {
-	margin: 0;
+  margin: 0;
 }
 
 .formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formulario__btn {
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .1s ease all;
 }
 
 .formulario__btn:hover {
   color: red;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+  font-size: 14px;
+  color: #119200;
+  display: none;
 }
 
 .formulario__mensaje-exito-activo {
-	display: block;
+  display: block;
 }
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+  color: #1ed12d;
+  opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+  color: #bb2929;
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
+  color: #bb2929;
+  opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
+  border: 3px solid #bb2929;
 }
 
-.col-lg-8{
+.col-lg-8 {
   width: 75%;
 }
-.contenedor-formulario{
+
+.contenedor-formulario {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1262,27 +1277,28 @@ textarea {
   font-size: larger;
 }
 
-.contenedor-formulario span{
+.contenedor-formulario span {
   color: white;
   font-size: larger;
 }
 
-.formulario__input-error{
+.formulario__input-error {
   color: rgb(255, 0, 0);
   font-size: medium;
 }
 
-#noticias .not-item{
+#noticias .not-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-#noticias .not-item .not-link{
+#noticias .not-item .not-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
+
 #noticias .not-item .not-link .not-hover {
   display: flex;
   position: absolute;
@@ -1295,18 +1311,21 @@ textarea {
   transition: opacity ease-in-out 0.25s;
 }
 
-#noticias .not-item .not-link .not-hover .not-hover-content{
+#noticias .not-item .not-link .not-hover .not-hover-content {
   font-size: 1.25rem;
   color: white;
 }
+
 #noticias .not-item .not-link:hover .not-hover {
   opacity: 1;
 }
+
 #noticias .not-item .not-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
+
 #noticias .not-item .not-caption .not-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1321,16 +1340,106 @@ textarea {
 
 
 @media (max-width: 500px) {
-  .imf-fluid{
+  .imf-fluid {
     height: 200px;
   }
-  .post-thumbnail{
+
+  .post-thumbnail {
     height: 250px;
     width: 390px;
   }
-  .myVideo{
+
+  .myVideo {
     width: 390px;
     height: 250px;
-  
+
+  }
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  /* Ancho máximo de la tabla */
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+
+
+td,
+th {
+  border: 1px solid #ddd;
+  /* Borde de 1px sólido con un color gris claro */
+  padding: 8px;
+  /* Espaciado interno de las celdas */
+  font-family: Arial, sans-serif;
+  /* Tipo de fuente para el texto de la tabla */
+  font-size: 14px;
+  /* Tamaño del texto */
+  background-color: #4CAF50;
+  /* Color de fondo para encabezados */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  /* Color de fondo para filas pares */
+}
+
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+#info {
+  padding-right: 45px;
+}
+
+#tabla {
+  padding-left: 45px;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.tabla {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 500px) {
+
+  .info,
+  .tabla {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .imf-fluid {
+    height: 100px;
+  }
+
+  .post-thumbnail {
+    height: 500px;
+    width: 320px;
+  }
+
+  .myVideo {
+    width: 290px;
+    height: 150px;
+
   }
 }
