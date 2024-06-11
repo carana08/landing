@@ -145,10 +145,6 @@ let loadVotes = async() => {
 
 	// tabla.innerHTML = '';
 	
-	// for (let key in datos) {
-	// 	const categoria = datos[key].categoria;
-	// 	tabla.innerHTML += template;
-	// }
 
 	for(const key in datos){
 		let vote= datos[key];

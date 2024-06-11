@@ -1352,8 +1352,11 @@ textarea {
   .myVideo {
     width: 390px;
     height: 250px;
-
   }
+  #suscription h3 img{
+    width: 50px;
+  }
+
 }
 
 table {
@@ -1368,7 +1371,7 @@ table {
 
 
 td,
-th {
+th, thead {
   border: 1px solid #ddd;
   /* Borde de 1px sólido con un color gris claro */
   padding: 8px;
@@ -1377,13 +1380,13 @@ th {
   /* Tipo de fuente para el texto de la tabla */
   font-size: 14px;
   /* Tamaño del texto */
-  background-color: #4CAF50;
+  background-color: #008080;
   /* Color de fondo para encabezados */
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #e6fdff;
   /* Color de fondo para filas pares */
 }
 
@@ -1439,6 +1442,24 @@ footer .container {
 
   .myVideo {
     width: 290px;
+    height: 150px;
+
+  }
+  #suscription h3 img{
+    width: 50px;
+  } 
+}
+@media (max-width: 360px){
+  #ligas img{
+    width: 130px;
+  }
+  .post-thumbnail {
+    height: 500px;
+    width: 355px;
+  }
+
+  .myVideo {
+    width: 350px;
     height: 150px;
 
   }
