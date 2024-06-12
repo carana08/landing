@@ -115,21 +115,6 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
-
-async function obtenerDatos() {
-	const url = "https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json"; // Reemplaza con la URL real
-	const respuesta = await fetch(url);
-	if (!respuesta.ok) {
-	console.error("Error:", respuesta.status);
-	return;
-	}
-	const datos = await respuesta.json();
-	loadVotes();
-  
-	console.log(datos);
-	 // Procesar o mostrar los datos obtenidos
-	}	
-obtenerDatos();
 let loadVotes = async() => {
 	const url = "https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json"; // Reemplaza con la URL real
 	const respuesta = await fetch(url);
@@ -172,6 +157,21 @@ let loadVotes = async() => {
 	`;
 
 }
+async function obtenerDatos() {
+	const url = "https://primerproyecto-e8b07-default-rtdb.firebaseio.com/colection.json"; // Reemplaza con la URL real
+	const respuesta = await fetch(url);
+	if (!respuesta.ok) {
+	console.error("Error:", respuesta.status);
+	return;
+	}
+	const datos = await respuesta.json();
+	loadVotes();
+  
+	console.log(datos);
+	 // Procesar o mostrar los datos obtenidos
+	}	
+obtenerDatos();
+
 
 
 
